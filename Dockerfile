@@ -8,5 +8,5 @@ RUN ["npm","run","build"]
 FROM nginx
 WORKDIR /app
 EXPOSE 80
-COPY --from=builder /app/dist/dockerApp   /usr/share/nginx/html
+COPY --from=builder /app/dist/clientPanel   /usr/share/nginx/html
  
