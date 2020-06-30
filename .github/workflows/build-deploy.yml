@@ -33,7 +33,7 @@ jobs:
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
         name: Babitabisht/clientPanel/clientPanel
-        username: ${{ secrets.ACTOR }}
-        password: ${{ secrets.THIS_IS_SECRET }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
         regsitry: docker.pkg.github.com
         # snapshot: true
