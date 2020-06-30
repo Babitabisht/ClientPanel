@@ -36,4 +36,5 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         regsitry: docker.pkg.github.com
+        dockerfile: Dockerfile
         # snapshot: true
