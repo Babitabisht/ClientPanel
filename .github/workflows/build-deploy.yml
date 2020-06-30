@@ -23,7 +23,7 @@ jobs:
       with: 
         GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages # The branch the action should deploy to.
-        FOLDER: dist/devLogger # The folder the action should deploy.
+        FOLDER: dist/clientPanel # The folder the action should deploy.
 
   build:
     runs-on: ubuntu-latest
@@ -32,7 +32,7 @@ jobs:
     - name: Publish to Registry
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
-        name: Babitabisht/devLogger/devLogger
+        name: Babitabisht/clientPanel/clientPanel
         username: ${{ secrets.ACTOR }}
         password: ${{ secrets.THIS_IS_SECRET }}
         regsitry: docker.pkg.github.com
