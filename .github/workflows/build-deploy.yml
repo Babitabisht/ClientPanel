@@ -32,7 +32,7 @@ jobs:
     - name: Publish to Registry
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
-        name: Babitabisht/clientPanel/clientPanel
+        name: Babitabisht/clientPanel
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         regsitry: docker.pkg.github.com
