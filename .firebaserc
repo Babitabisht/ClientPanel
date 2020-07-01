@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "clientpanel-d418c": {
+      "hosting": {
+        "clientPanel": [
+          "clientpanel-d418c"
+        ]
+      }
+    }
+  }
+}
