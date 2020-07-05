@@ -13,7 +13,12 @@ import { RegisterComponent } from './components/register/register.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { LoginComponent } from './components/login/login.component';
-
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { environment } from 'src/environments/environment';
+import { ClientsComponent } from './components/clients/clients.component';
+import {FormsModule} from  '@angular/forms'
+import { FlashMessagesModule } from 'angular2-flash-messages';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,13 +31,18 @@ import { LoginComponent } from './components/login/login.component';
     RegisterComponent,
     SettingsComponent,
     NotFoundComponent,
-    LoginComponent
+    LoginComponent,
+    ClientsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase, 'clientPanel'),
+    FlashMessagesModule.forRoot(),
+    AngularFireDatabaseModule,
+    FormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

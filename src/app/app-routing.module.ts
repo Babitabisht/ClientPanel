@@ -11,11 +11,11 @@ import {SidebarComponent} from '../app/components/sidebar/sidebar.component'
 import {LoginComponent} from '../app/components/login/login.component'
 
 const routes: Routes = [
-  { path: 'client/add/:id', component: AddClientComponent },
-  { path: 'client/:id', component: ClientDetailsComponent },
   { path: '', component: DashboardComponent },
-  { path: 'client/edit:id', component: EditClientComponent },
-  {path:'login', component:LoginComponent},
+  { path: 'client/add', component: AddClientComponent },
+  { path: 'client/edit/:id', component: EditClientComponent },
+  { path: 'client/:id', component: ClientDetailsComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'settings', component: SettingsComponent },
   { path: 'sidebar', component: SidebarComponent },
